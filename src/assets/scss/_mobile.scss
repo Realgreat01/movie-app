@@ -1,0 +1,85 @@
+@media only screen and (max-width: 600px){
+    #app {
+        width: 100%;
+        margin:0;
+      }
+      body{
+        padding: 0;
+        width: 100%;
+    }
+    nav{
+        font-size: 11px;
+        height: 60px;
+        margin-bottom: 40px;
+        width: 100%;
+        button{
+           font-size: 12px;
+        }
+    }
+    
+    #searchBox{
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px auto;
+        overflow:hidden;
+        padding-left: 50px;
+        font-size: 1rem;
+    }
+    
+    #movie-container{
+        grid-template-columns: 1fr 1fr;
+        justify-content:center;
+        place-items:center;
+        padding-top: 30px;
+        width: 96%;
+        margin: 10px auto;
+        #movie-box{
+            min-height: 230px;
+            max-height: fit-content;
+            width: 90%;
+            margin: 5%;
+            border-radius: 10px;
+            padding-bottom:4px;
+            #movie-poster{
+                overflow:hidden;
+               img{
+                height: 150px;
+                margin-bottom: 20px;
+               }
+            }
+    
+    
+            #movie-details{
+                justify-content: space-between;
+                #movie-title{
+                    color:$primary;
+                    font-size: 10px;
+                    font-weight: 500;
+                }
+                #year-desktop{
+                    display:none;
+                }
+
+                h2{
+                    color: $text;
+                    font-size: 8px;
+                    margin: 4px 10px;
+                }
+                a{
+                    padding: 4px 10px;
+                    border-radius:5px;
+                }
+            }
+                #year-mobile{
+                    display:block;
+                    color: $text;
+                    font-size: 8px;
+                    margin: 4px 10px;
+                }
+                #movie-year{
+                    color:$year;
+                }
+        }
+    }
+}
