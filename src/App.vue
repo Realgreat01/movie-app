@@ -61,7 +61,7 @@ export default {
   name: 'App',
   data(){
     return{
-        searchedKeyword: "EndGamebxbxxbxnxb",
+        searchedKeyword: "latest",
         searchedMovie: [],
         searchToggle: false,
         options: {
